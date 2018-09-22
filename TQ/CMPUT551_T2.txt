@@ -1,0 +1,16 @@
+Thought Questions 2
+
+Name: Amir Samani
+Student ID: 1476213
+CCID: samani
+Date: 12 October 2017
+
+Question 1:
+Having low variance and low bias is what we desire in machine learning. While simpler models tend to have lower variance, they may end up under-fitting due to the simple assumption of the complexity, which result in some bias. On the other hand, we have complex models with low bias, but due to the over-fitting, the model may lead to high variance. Is it possible to consider a general model (with minimum and maximum desired level of complexity) and try to find the a good fit for the data with the least complex form of the general model while we also have a fairly small bias? For instance, we can give the solution (the model) two different scores, a score for complexity (more complex the worse) and the bias score (higher the worse) and start learning and searching for the model from simpler forms and only goes to a more complex solution if it is significantly reduces the bias score.
+
+Question 2:
+When the function we are trying to optimize has a convex form, SGD seems to simply solve it for us. However, when there are multiple local minimums (or maximums) the starting point can play an important role in the final result (it can decide which local optimum point we find). This is where the idea of multiple starting point comes. Intuitively, we can start from a random location and run SGD. The question is, as another approach to solve this problem, is it also possible to instead of moving with direction of gradient, we move randomly? For instance, similar to RL, we do exploration for a while and then do exploitation (moving with the direction of gradient) from the best points we found in the exploration phase.
+
+
+Question 3:
+To deal with large data sets, we use SGD instead of batch gradient descent, since the computation of gradient for all samples (required by batch gradient descent) is not cost-effective. However, as mentioned in the course notes, mini-batch gradient descent is also a solution between SGD and batch gradient descent, in which, instead of using one sample at a time, we can use a smaller subset of the samples. The question is, what is the effect of the batch-size on learning and parameters? Do we expect to have lower variance for instance in each gradient descent update (since we use more samples)? Does the batch-size affect the way we choose the step-size?

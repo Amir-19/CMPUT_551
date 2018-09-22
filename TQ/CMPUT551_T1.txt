@@ -1,0 +1,16 @@
+Thought Questions 1
+
+Name: Amir Samani
+Student ID: 1476213
+CCID: samani
+Date: 21 September 2017
+
+Question 1:
+Table of probabilities is a convenient property of PMFs. While naturally continuous variables can not be given with their probabilities in a table, since they are not countable. Probability of each specific value is also zero which is another reason a table might not be achievable for continuous variables. However, in practice, continuous variables in real world, do not have all the properties of continuous numbers. For instance, the height of a person is in fact a continues variable, but based on the measurement tools, we have a precision degree. Considering this fact, we may be able to discretize a continuous variable based on desired level of precision. Furthermore, we can use the properties and the tools related to discrete variables (such as table of probabilities), if desired.
+
+Question 2:
+Commonly in practice, the data we are using for a machine learning task might be noisy. Maximum likelihood estimation may end up overfitting because of the noises in the data. The prior beliefs can help maximum a posteriori estimation to overcome the noisy data issue. However, maximum likelihood estimation does not consider the prior beliefs. What is the proper method to deal with this issue in maximum likelihood estimation? Perhaps regularization can help us to overcome this problem.
+
+
+Question 3:
+In linear regression, the loss function consider each data point with the same level of importance. While we can have some priorities among our data entries and we can value some of them more than the others (this can be because of various reasons. For instance, we think some of the data entries are measured more accurately compared to others). One approach might be to use a single entry multiple times. This is similar to have a multiplier in the loss function which gives priority to our desired data entries. On the contrary, excessive usage of this method may lead to overfitting. How we can find a proper balance for this method.

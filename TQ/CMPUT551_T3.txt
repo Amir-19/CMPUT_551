@@ -1,0 +1,17 @@
+Thought Questions 3
+
+Name: Amir Samani
+Student ID: 1476213
+CCID: samani
+Date: 4 November 2017
+
+Question 1:
+With small training data, using Logistic Regression we may end up overfit the data. On the other hand, Naive Bayes works well with small training data (since the estimated are based on the joint density functions). However, Naive Bayes has this strong assumption of all the features are conditionally independent. How sensitive is Naive Bayes to this assumption? Since in practice, we may not always have the required assumption of Naive Bayes. Does Naive Bayes simple hypothesis function makes it immune to overfitting? What is the effect of noise and outliers to Naive Bayes? Are there any other useful application of Naive Bayes apart from performing well with small training data (for instance in comparison with Neural Networks which perform poorly with small training data)?
+
+
+Question 2:
+While using ANNs a natural question is how to decide the number of layers and neurons in each layer. Based on some of my readings, an intuitive method can be, is to add layers until you see overfitting happens. The method suggests, having your network overfit the training data, you know your network model is strong enough, then you can add dropout or regularization to the network model to deal with overfitting problem. On the other hand, for the neurons, we can have a little bit more than the input size and decrease over time until the last layer. In practice this kind of methods might work well and in fact, since ANNs are still somehow a blackbox process to us it is hard to make practical theories to help us having a good network models. My question is, does ANNs need to be really deep to perform well? I know by adding layers we are making the model able to approximate more complex functions but can we get the same results by adding more neurons? For instance, instead of having deep networks, we have wide networks? How well these wide networks can perform in the task already been proven deep networks can perform really well?
+
+
+Question 3:
+I have read about No Free Lunch theorem which its simple intuition suggests all optimization algorithm are equivalent when we average their performance using all of the possible problems. But in practice, we want to solve a specific problem which (probably) there is one (or multiple) candidate algorithms working better than others. There are some empirical evaluations for different algorithms comparing them using several datasets. For instance, we know that CNNs are expected to perform well when it comes to images or RNNs are suitable for NLP tasks. Sometimes we do not have resources to implement different algorithms to find the most suitable solution for our task. However, when we have this option we can try some different algorithms. My question is, is there a method to combine multiple solutions and try to take advantage of all them. To clarify, we can have voting system across multiple algorithms and use all of their results to make the final conclusion. Apart from time and cost, how practical this solution is? Does the improvements (if any) worth it?
